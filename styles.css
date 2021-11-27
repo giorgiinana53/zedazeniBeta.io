@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+}   
+
+img {
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+body {
+    background-color: white;
+}
+
+#sec1 {
+    width: 100%;
+    height: 90vh;
+}
+
+.video-container, #bgVideo {
+    position: fixed;
+    width: 100%; 
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.resp-navbar {
+    display: none;
+}
+
+.burgerMenu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 2px 2px 7px 3px grey;
+    top: 80vh;
+    left: 80vw;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.burgerMenu div{
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.change div:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(2px, 2px);
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.change div:nth-child(2) {
+    transform: translate(40px);
+}
+
+.change div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(3px, -4px);
+    transform: rotate(-45deg) translate(3px, -4px);
+}
+
+#bgVideo {
+    position: relative;
+}
+
+.center-logo {
+    position: absolute;
+    z-index: 1;
+    left: 48vw;
+    transform: translate(-50%);
+    margin-top: 250px;
+}
+
+.photo >img {
+    width:390px
+}
+
+header {
+    position: sticky;
+    top: -1px;
+    z-index: 999;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px -1px rgba(0,0,0,.2);
+    position: sticky;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 2px;
+}
+
+.navigation ul a {
+    margin: 0 40px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight:bold;
+    color: black;
+    font-family: Helvetica,sans-serif;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+.title p {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    margin-right: 30px;
+    font-family: Helvetica,sans-serif;
+    font-weight: bolder;
+}
+
+.title h5 {
+    text-align: center;
+    font-weight:normal;
+    font-family: sans-serif;
+    margin-top: 1%;
+}
+
+.title h5:nth-child(3) {
+    margin-top: 0;
+}
+
+.slider {
+    margin-top: 10%;
+    width: 100%;
+    height: 390px;
+    position: relative;
+    background-color: rgb(252, 247, 247);
+}
+
+.slider-lift {
+    height: 100%;  
+    margin: 10px auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 0;
+    transition: 0.3s ease-out;
+    position: absolute;
+    left: 0%;
+}
+
+.slider-item {
+    height: 100%;
+    position: relative;
+    left: 0;
+    text-align: center;
+    margin: 10px 20px;
+    z-index: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item > img {
+    height: 100%;
+    transition: 0.2s ease-out;
+}
+
+.slider-item:hover > img {
+    transform: scale(1.2);
+}
+
+.slider-lift::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.slider #slider-button-left, .slider #slider-button-right {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: gray;
+    cursor: pointer;
+    left: .5%;
+    z-index: 1;
+    margin-top: 160px;
+}
+
+.slider #slider-button-right {
+    left: 97.5%;
+}
+
+.boxes {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.box {
+    width: 100%;
+    height: 390px;
+    background-color: white;
+}
+
+.two {
+    background-image: url("./shenobebi.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.three {
+    background-color: rgb(255, 255, 255);
+}
+
+.four {
+    background-image: url("./fabrika.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.five {
+    background-color: rgb(255, 255, 255);
+}
+
+.six {
+    background-image: url("./beerglass.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+h1, h5 {
+    font-family: Helvetica,sans-serif;
+}
+
+.btn p {
+    font-family: sans-serif;
+    width: 120px;
+    height: 50px;
+    border:2px solid gray;
+    padding-top: 14px;
+    color: gray;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.btn p:hover {
+    color: pink;
+    border: 2px solid pink;
+    transition: all 0.3s;
+}
+
+.award {
+    width:100%;
+    height: 150px;
+    background-color: rgb(252, 247, 247);
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 60px;
+}
+
+.svg {
+    width: 100%;
+    height: 310px;
+}
+
+
+.svg-4 {
+    margin-top:15px;
+}
+
+.every {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: grey;
+    margin-top: 5px;
+}
+
+.icons-text {
+    font-size: 18px;
+    color: rgb(41, 41, 41);
+}
+
+.news {
+    background-color: white;
+}
+
+.news p {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.news-slider span {
+    font-size: 40px;    
+    color: gray;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.news-slider {
+    width: 100%;
+    margin-top: 100px;
+    height: 600px;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.actives, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+.fade img {
+    object-fit: cover;
+    height: 550px;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+footer {
+    position: relative;
+    background-image: url("./footer-photo.jpg");
+    height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+h6 {
+    z-index: 1;
+    color: white;
+    position: relative;
+}
+
+.social-footer {
+    justify-content: center;
+    display: flex;
+    padding-top: 70px; 
+}
+
+.social-icons {
+    margin: 0 10px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    color: black;
+}
+
+
+.footer-nav {
+    margin-top: 45px;
+}
+
+.footer-nav ul{
+    position: relative;
+    list-style: none;
+    z-index: 1;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 50px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,158 @@
+@media (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+
+    .resp-navbar {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        padding: 50px 55px;
+        left: 100%;
+        transition: 0.2s;
+    }
+
+    .resp-navbar:active {
+        left: -100%;
+    }
+
+    .resp-navbar.active {
+        left: 0;
+    }
+
+    .resp-nav {
+        font-size: 22px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .resp-nav ul {
+        list-style-type: none;
+    }
+
+    .resp-nav a {
+        color: black;
+    }
+
+    .video-container, #bgVideo {
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        position: relative;
+        object-fit: cover;
+    }
+
+    .resp-nav ul li a{
+        text-decoration: none;
+        list-style: none;
+    }
+    #sec1 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .photo >img {
+        width:350px;
+        margin-top: 250px;
+    }
+
+    .burgerMenu {
+        display: flex;
+    }
+
+    #slider-button-left, #slider-button-right {
+        display: none;
+    }
+    .slider {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .slider-item:hover > img {
+        transform: scale(1.2);
+    }
+
+    .slider-lift img {
+        height: 280px;
+    }
+
+    .title {
+        margin-top: 30px;
+    }
+
+    .award {
+        display: grid;
+        grid-template-columns:2fr 2fr;
+        height: 400px;
+        position: relative;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+    }
+
+    .box {
+        width: 100%;
+        height: 250px;
+    }
+
+    .description > img {
+        width: 70px;
+    }
+
+    .text h1 {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+    .text h5 {
+        font-size: 12px;
+    }
+
+    .t-1 {
+        margin-top: -25px;
+    }
+
+    .t-3 {
+        margin-top: -10px;
+    }
+
+    .t-7 {
+        margin-top: -25px;
+    }
+
+    .btn {
+        margin-top: -30px;
+    }
+    .prev, .next {
+        display: none;
+    }
+    .fade  img {
+        height: 1000;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .footer-nav ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+      
+}
+
+@media (max-width: 700px) {
+    .photo > img {
+        width:270px
+    }
+}
